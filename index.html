@@ -1,0 +1,122 @@
+<html
+    __fvdsurfcanyoninserted="1"
+    class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    "
+>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+        <link rel="shortcut icon" type="image/png" href="./caythong.jpg"/>
+
+        <!-- 1. Đây là phần title của website -->
+        <title>Chúng Mình Yêu Lại Từ Đầu Nhá?</title>
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            window.open = function () {};
+            window.print = function () {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function () {};
+            }
+        </script>
+        <script
+            type="text/javascript"
+            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
+        ></script>
+        <meta content="clickberry-extension-here" />
+    </head>
+    
+    <body>
+        <div class="box"></div>
+        <link
+            href="https://fonts.googleapis.com/css?family=Wendy+One"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <div class="container">
+            <!-- 2. Dòng chữ Merry Christmas
+            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+            <div class="balloon">
+                <div><span>M</span></div>
+                <div><span>E</span></div>
+                <div><span>R</span></div>
+                <div><span>R</span></div>
+                <div><span>Y</span></div>
+                <div><span>C</span></div>
+                <div><span>H</span></div>
+                <div><span>R</span></div>
+                <div><span>I</span></div>
+                <div><span>S</span></div>
+                <div><span>T</span></div>
+                <div><span>M</span></div>
+                <div><span>A</span></div>
+                <div><span>S</span></div>
+            </div>
+            <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                </div>
+            <div class="avatar">
+                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                <img src="./voiu.jpeg" alt="" class="avatar__img" onclick="showMessage()" />
+                <!-- 4. Tên của người đó -->
+                <h1 onclick="showMessage()" class="avatar__title">Gửi Phạm Minh Trang</h1>
+            </div>
+            
+            <!-- 5. Phần nhạc -->
+            <audio autoplay loop>
+                <source src="cggs.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage("resize", "*");
+            }
+            function showMessage() {
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                swal({
+                    title: "Lời chúc giáng sinh mq gửi tới mt", // Tiêu đề của popup
+                    text: "Chúc cô bé của tớ có một mùa giáng sinh thật đẹp vui vẻ hạnh phúc bên gia đình bạn bè nhá. Tớ biết là từ lúc yêu em có hay làm em buồn và thất vọng nhiều thứ nhưng đừng vì thế mà hiểu rằng tớ không quan tâm hay không yêu thương gì em đấy, ngược lại là đằng khác tớ thương em nhiều lắm nên mong rằng em sẽ ở bên tớ thật lâu, lâu ơi là lâu. Mong rằng em sẽ không rung động với bất kì một ai khác vì khoảng cách của chúng ta. Cũng mong rằng em sẽ ở bên tớ thêm thật nhiều mùa giáng sinh hơn nữa nhá. Chúc Phạm Minh Trang giáng sinh vui vẻ. Yêu Trang nhiều lắm💗🎄", // Nội dung lời nhắn
+                    button: {
+                        text: "💌️",
+                    },
+                });
+            }
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
